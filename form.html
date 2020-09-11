@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <header>
+      <h1>Сторіка про котиків і собачок</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="form.html">Форма</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Форма</h1>
+      <form action="https://formspree.io/mbjznvje" method="POST">
+        <fieldset>
+          <legend>Інформація про користувача</legend>
+          <label for="email">
+            Електронна пошта:
+          </label>
+          <input type="text" name="email" placeholder="your@email.com" />
+          <br />
+          <label for="login">
+            Логін:
+          </label>
+          <input type="text" name="login" placeholder="login" />
+          <br />
+          <label for="pass">
+            Пароль:
+          </label>
+          <input type="password" name="pass" placeholder="password" />
+          <br />
+          <label for="firstName">
+            Ім’я:
+          </label>
+          <input type="text" name="firstName" placeholder="John" />
+          <br />
+          <label for="secondName">
+            Прізвище:
+          </label>
+          <input type="text" name="secondName" placeholder="Doe" />
+          <br />
+          <label for="Gender">
+            Стать:
+          </label>
+          <input type="radio" name="Gender" value="male" checked />
+          Чоловіча
+          <input type="radio" name="Gender" value="female" />
+          Жіноча
+          <input type="radio" name="Gender" value="other" />
+          Інше
+          <br />
+          <label for="age">
+            Вік:
+          </label>
+          <input type="number" name="age" min="1" placeholder="32" />
+          <br />
+          <label for="birthday">Дата народження:</label>
+          <input type="date" name="birthday" name="birthday" />
+          <br />
+          <label for="favcolor">Улюблений колір:</label>
+          <input type="color" name="favcolor" name="favcolor" />
+          <br />
+          <label for="city">
+            В якому місті проживаеєте:
+          </label>
+          <select name="city">
+            <option value="lviv">Львів</option>
+            <option value="kyiv">Київ</option>
+            <option value="other">Інше місто</option>
+          </select>
+          <br />
+          <label for="Animals">
+            Ваша улюблена тварина:
+          </label>
+          <input type="checkbox" name="Animals" value="dogs" checked />
+          Собаки
+          <input type="checkbox" name="Animals" value="cats" checked />
+          Коти
+          <input type="checkbox" name="Animals" value="other" checked />
+          Інші тварини
+          <br />
+          <label for="textarea">
+            Коротка історія про Вас:
+          </label>
+          <textarea name="textarea" cols="24" rows="2"> </textarea>
+        </fieldset>
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
