@@ -23,72 +23,88 @@
           <label for="email">
             Електронна пошта:
           </label>
-          <input type="text" name="email" placeholder="your@email.com" />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+          />
           <br />
           <label for="login">
             Логін:
           </label>
-          <input type="text" name="login" placeholder="login" />
+          <input type="text" id="login" name="login" placeholder="login" />
           <br />
           <label for="pass">
             Пароль:
           </label>
-          <input type="password" name="pass" placeholder="password" />
+          <input type="password" id="pass" name="pass" placeholder="password" />
           <br />
           <label for="firstName">
             Ім’я:
           </label>
-          <input type="text" name="firstName" placeholder="John" />
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="John"
+          />
           <br />
           <label for="secondName">
             Прізвище:
           </label>
-          <input type="text" name="secondName" placeholder="Doe" />
+          <input
+            type="text"
+            id="secondName"
+            name="secondName"
+            placeholder="Doe"
+          />
           <br />
-          <label for="Gender">
+          <label>
             Стать:
+            <input type="radio" name="Gender" value="male" checked />
+            Чоловіча
+            <input type="radio" name="Gender" value="female" />
+            Жіноча
+            <input type="radio" name="Gender" value="other" />
+            Інше
           </label>
-          <input type="radio" name="Gender" value="male" checked />
-          Чоловіча
-          <input type="radio" name="Gender" value="female" />
-          Жіноча
-          <input type="radio" name="Gender" value="other" />
-          Інше
           <br />
           <label for="age">
             Вік:
           </label>
-          <input type="number" name="age" min="1" placeholder="32" />
+          <input type="number" id="age" name="age" min="1" placeholder="32" />
           <br />
           <label for="birthday">Дата народження:</label>
-          <input type="date" name="birthday" name="birthday" />
+          <input type="date" id="birthday" name="birthday" name="birthday" />
           <br />
           <label for="favcolor">Улюблений колір:</label>
-          <input type="color" name="favcolor" name="favcolor" />
+          <input type="color" id="favcolor" name="favcolor" name="favcolor" />
           <br />
-          <label for="city">
+          <label>
             В якому місті проживаеєте:
+            <select name="city">
+              <option value="lviv">Львів</option>
+              <option value="kyiv">Київ</option>
+              <option value="other">Інше місто</option>
+            </select>
           </label>
-          <select name="city">
-            <option value="lviv">Львів</option>
-            <option value="kyiv">Київ</option>
-            <option value="other">Інше місто</option>
-          </select>
           <br />
           <label for="Animals">
             Ваша улюблена тварина:
+            <input type="checkbox" name="Animals" value="dogs" checked />
+            Собаки
+            <input type="checkbox" name="Animals" value="cats" checked />
+            Коти
+            <input type="checkbox" name="Animals" value="other" checked />
+            Інші тварини
           </label>
-          <input type="checkbox" name="Animals" value="dogs" checked />
-          Собаки
-          <input type="checkbox" name="Animals" value="cats" checked />
-          Коти
-          <input type="checkbox" name="Animals" value="other" checked />
-          Інші тварини
           <br />
           <label for="textarea">
             Коротка історія про Вас:
           </label>
-          <textarea name="textarea" cols="24" rows="2"> </textarea>
+          <textarea name="textarea" id="textarea" cols="24" rows="2">
+          </textarea>
         </fieldset>
         <input type="submit" />
         <input type="reset" />
